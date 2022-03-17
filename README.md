@@ -8,7 +8,7 @@ ElChinaAreaCascade
 
 国家统计局: http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/
 
-demo: https://codepen.io/shin-xi/pen/zYpvgdQ
+demo: https://codepen.io/shin-xi/pen/RwxrwGO
 
 
 ### 安装
@@ -105,6 +105,10 @@ export default {
 
 
 ## 版本信息
+
+- V1.0.1
+
+  更新demo链接
 
 - V1.0.0
 

@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git@github.com:shin-xi/el-china-area-cascade.git"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
