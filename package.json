@@ -1,0 +1,39 @@
+{
+  "name": "el-china-area-cascade",
+  "author": "shino",
+  "description": "基于vue2、element-ui的cascade的省市区级联选择组件",
+  "files": [
+    "dist"
+  ],
+  "private": false,
+  "main": "./dist/elChinaAreaCascade.umd.js",
+  "module": "./dist/elChinaAreaCascade.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/elChinaAreaCascade.es.js",
+      "require": "./dist/elChinaAreaCascade.umd.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:shin-xi/el-china-area-cascade.git"
+  },
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.8.0",
+    "vite-plugin-vue2": "^1.9.3",
+    "vue-template-compiler": "2.6.10"
+  },
+  "dependencies": {
+    "element-ui": "2.13.2",
+    "vue": "2.6.10"
+  },
+  "peerDependencies": {
+    "element-ui": "^2.13.2"
+  }
+}
