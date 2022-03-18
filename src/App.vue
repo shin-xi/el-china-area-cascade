@@ -1,12 +1,41 @@
 <template>
-  <el-china-area-cascade
-      ref="elChinaAreaCascade"
-      v-model="locationCodes"
-      size="mini"
-      :level="2"
-      :layerAllOptions="layerAllOptions"
-      @change="change"
-  />
+  <div>
+    <div>
+      展示到省：
+      <el-china-area-cascade
+          ref="elChinaAreaCascade"
+          v-model="locationCodes"
+          size="mini"
+          :level="1"
+          :layerAllOptions="layerAllOptions"
+          @change="change"
+      />
+    </div>
+    <br />
+    <div>
+      展示到市：
+      <el-china-area-cascade
+          ref="elChinaAreaCascade"
+          v-model="locationCodes"
+          size="mini"
+          :level="2"
+          :layerAllOptions="layerAllOptions"
+          @change="change"
+      />
+    </div>
+    <br />
+    <div>
+      展示到区：
+      <el-china-area-cascade
+          ref="elChinaAreaCascade"
+          v-model="locationCodes"
+          size="mini"
+          :level="3"
+          :layerAllOptions="layerAllOptions"
+          @change="change"
+      />
+    </div>
+  </div>
 </template>
 
 <script>

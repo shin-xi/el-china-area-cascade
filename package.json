@@ -18,7 +18,14 @@
     "type": "git",
     "url": "git@github.com:shin-xi/el-china-area-cascade.git"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
+  "keywords": [
+    "vue",
+    "element-ui",
+    "cascade",
+    "省市区",
+    "级联"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",

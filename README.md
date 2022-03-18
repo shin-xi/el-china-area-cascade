@@ -118,6 +118,10 @@ export default {
 
 ​	之后版本待增加功能，指定属性设置disabled属性
 
+- V1.0.3
+
+  修复多组件，数据引用问题
+
 - V1.0.2
 
   增加扩展属性说明，修复firstLayerOrder设置无效bug
