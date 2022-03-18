@@ -72,9 +72,8 @@ export default {
   computed: {
     serviceOptions() {
       try {
-        if (this.firstLayerOrder.length === 0) return this.options
         // 排序处理
-        const _options = this.orderLayer(this.firstLayerOrder, this.options)
+       const _options = this.orderLayer(this.firstLayerOrder, this.options)
 
         // 层级处理
         this.cutLayer(_options, this.level)

@@ -3,7 +3,7 @@
       ref="elChinaAreaCascade"
       v-model="locationCodes"
       size="mini"
-      :level="3"
+      :level="2"
       :layerAllOptions="layerAllOptions"
       @change="change"
   />
