@@ -3,36 +3,37 @@
     <div>
       展示到省：
       <el-china-area-cascade
-          ref="elChinaAreaCascade"
-          v-model="locationCodes"
+          ref="elChinaAreaCascade1"
+          v-model="locationCodes1"
           size="mini"
           :level="1"
           :layerAllOptions="layerAllOptions"
           @change="change"
       />
     </div>
-    <br />
+    <br/>
     <div>
       展示到市：
       <el-china-area-cascade
-          ref="elChinaAreaCascade"
-          v-model="locationCodes"
+          ref="elChinaAreaCascade2"
+          v-model="locationCodes2"
           size="mini"
           :level="2"
           :layerAllOptions="layerAllOptions"
           @change="change"
       />
     </div>
-    <br />
+    <br/>
     <div>
       展示到区：
       <el-china-area-cascade
-          ref="elChinaAreaCascade"
-          v-model="locationCodes"
+          ref="elChinaAreaCascade3"
+          v-model="locationCodes3"
           size="mini"
           :level="3"
           :layerAllOptions="layerAllOptions"
           @change="change"
+          clearable
       />
     </div>
   </div>
@@ -49,7 +50,9 @@ export default {
   // },
   data() {
     return {
-      locationCodes: [],
+      locationCodes1: [],
+      locationCodes2: ['120000000000', '120100000000'],
+      locationCodes3: [],
       locationText: [],
       layerAllOptions: [
         {

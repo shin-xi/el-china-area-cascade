@@ -1,5 +1,7 @@
 <template>
   <el-cascader
+      :key="componentKey"
+      v-if="refresh"
       ref="elCascader"
       v-model="value"
       :options="serviceOptions"
@@ -66,14 +68,16 @@ export default {
   },
   data() {
     return {
-      value: this.locationCodes
+      value: [],
+      componentKey: 1,
+      refresh: true
     };
   },
   computed: {
     serviceOptions() {
       try {
         // 排序处理
-       const _options = this.orderLayer(this.firstLayerOrder, this.options)
+        const _options = this.orderLayer(this.firstLayerOrder, this.options)
 
         // 层级处理
         this.cutLayer(_options, this.level)
@@ -85,6 +89,15 @@ export default {
         console.warn('【elChinaAreaCascade】: 未知原因无法处理数据源')
         return this.options
       }
+    }
+  },
+  watch: {
+    locationCodes: {
+      handler(nv) {
+        this.value = nv
+        this.componentKey++
+      },
+      immediate: true
     }
   },
   methods: {
