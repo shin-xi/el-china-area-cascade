@@ -14,7 +14,7 @@ demo: https://codepen.io/shin-xi/pen/RwxrwGO
 ### 安装
 
 ```shell
-npm install -S el-china-area-cascade
+npm i -S el-china-area-cascade
 ```
 
 
@@ -22,7 +22,7 @@ npm install -S el-china-area-cascade
 ### 使用
 
 ```vue
-// 全局
+// 全局引用
 import Vue from 'vue'
 import { Cascader } from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css'
@@ -36,7 +36,7 @@ new Vue({
 render: h => h(App)
 }).$mount('#app')
 
-// 局部
+// 局部引用
 <template>
   <el-china-area-cascade
       ref="elChinaAreaCascade"
@@ -117,6 +117,10 @@ export default {
 ## 版本信息
 
 ​	之后版本待增加功能，指定属性设置disabled属性
+
+- V1.0.4
+
+  修改说明
 
 - V1.0.3
 
