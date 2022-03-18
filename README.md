@@ -118,7 +118,7 @@ export default {
 
 ​	之后版本待增加功能，指定属性设置disabled属性
 
-- V1.0.5
+- V1.0.6
 
   修改若干bug
 

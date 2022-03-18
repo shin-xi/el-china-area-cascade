@@ -1,7 +1,6 @@
 <template>
   <el-cascader
       :key="componentKey"
-      v-if="refresh"
       ref="elCascader"
       v-model="value"
       :options="serviceOptions"
@@ -69,8 +68,7 @@ export default {
   data() {
     return {
       value: [],
-      componentKey: 1,
-      refresh: true
+      componentKey: 1
     };
   },
   computed: {
@@ -95,7 +93,7 @@ export default {
     locationCodes: {
       handler(nv) {
         this.value = nv
-        this.componentKey++
+        this.$nextTick(() => this.componentKey++)
       },
       immediate: true
     }

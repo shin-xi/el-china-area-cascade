@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git@github.com:shin-xi/el-china-area-cascade.git"
   },
-  "version": "1.0.5",
+  "version": "1.0.6",
   "keywords": [
     "vue",
     "element-ui",
